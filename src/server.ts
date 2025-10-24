@@ -30,7 +30,7 @@ export function startServer(port: number): Application {
     const response = ResponseModel.create(
       "error",
       500,
-      `Error interno del servidor ${err.message}`
+      `Error interno del servidor ${err.message}`,
     );
 
     res.status(500).json(response);
